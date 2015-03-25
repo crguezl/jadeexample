@@ -5,11 +5,13 @@
     $ npm install jade --global
 
 ## Run:
-        $ coffee jadeex.coffee > example.html
+        $ coffee jadeex.coffee > index.html
 
 or
 
-        $ node jadeex.js > jadeex.html
+        $ node jadeex.js > index.html
+
+See the result  [http://crguezl.github.io/jadeexample/index.html](http://crguezl.github.io/jadeexample/index.html)
 
 ## See
 
