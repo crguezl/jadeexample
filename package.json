@@ -1,0 +1,22 @@
+{
+  "name": "jade",
+  "version": "0.0.0",
+  "description": "## Install Jade",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crguezl/jadeexample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crguezl/jadeexample/issues"
+  },
+  "homepage": "https://github.com/crguezl/jadeexample",
+  "devDependencies": {
+    "gulp-shell": "~0.4.0"
+  }
+}
