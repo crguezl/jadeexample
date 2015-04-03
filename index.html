@@ -1,34 +1,58 @@
-<!DOCTYPE html><html><head><title>Jade Template</title><style>body {
-  font-family: Verdana;
-  font-size: 13px;
-  background: #eee;
-}
+<!DOCTYPE html><html><head><title>Jade Template</title><style>
+      body {
+        font-family: Verdana;
+        font-size: 13px;
+        background: #eee;
+      }
+      
+      h1, h2, h3 { font-size: 22px; color: #464646; }
+      h2 { font-size: 18px; }
+      h3 { font-size: 14px; }
+      
+      a { color: #C2575B; text-decoration: none; }
+      a:hover { color: #F76F76; }
+    </style></head><body>
+    <h1>Jade Intro.</h1>
+    <p>Clean and Classy!</p>
+    <h2>Text and Comments</h2>
+    <p>Text inside <em>paragraph</em> tag</p>
+    <p>Multi
+Line</p>
+    <div id="content">
+      <p class="description">`p` with a class of description inside a `div` with an id of content. You can simply omit the div btw.</p>
+    </div>
+    <h2>Attributes</h2>
+    <!-- for boolean attributes you can pass true/false or omit them--><!-- Multi lines ?--><!-- No commas ?--><input type="checkbox" name="terms" checked>
+    <h2>Nesting</h2>
+    <!-- We will do some nesting now| Lesser nesting ? ok .. cool!
+-->
+    <ul id="menu">
+      <li><a href="#target1" title="Home">Home</a></li>
+      <li><a href="#target2" title="Contact">Contact</a></li>
+    </ul>
+    <h2>Variables and Escaping</h2>
+    <!-- Ok .. time to learn the real stuff now!| Let's say you passed some variables to this template \
+| from your Node.js code. Since we don't have a node.js setup \
+| we're going to set the variables inside here. \
+| yes! you can define variables in jade templates! \
 
-h1, h2, h3 { font-size: 22px; color: #464646; }
-h2 { font-size: 18px; }
-h3 { font-size: 14px; }
-
-a { color: #C2575B; text-decoration: none; }
-a:hover { color: #F76F76; }
-</style></head><body><h1>Jade Intro.</h1><p>Clean and Classy!</p><h2>Text and Comments</h2><p>Text inside <em>paragraph</em> tag</p><p>Multi
-Line</p><div id="content"><p class="description">`p` with a class of description inside a `div` with an id of content. You can simply omit the div btw.</p></div><h2>Attributes</h2><!-- for boolean attributes you can pass true/false or omit them--><!-- Multi lines ?--><!-- No commas ?--><input type="checkbox" name="terms" checked><h2>Nesting</h2><!-- We will do some nesting now| Lesser nesting ? ok .. cool!
---><ul id="menu"><li><a href="#target1" title="Home">Home</a></li><li><a href="#target2" title="Contact">Contact</a></li></ul><h2>Variables and Escaping</h2><!-- Ok .. time to learn the real stuff now!| Let's say you passed some variables to this template
-| from your Node.js code. Since we don't have a node.js setup
-| we're going to set the variables inside here.
-| yes! you can define variables in jade templates!
-
-| want more text in the heading ?
-| arrays ? objects ?
+| want more text in the heading ? \
+| arrays ? objects ? \
 
 
-| One thing to remember though. Jade will html escape
-| the contents of #{}. If you want unescaped content
-| use !{}
-| Also notice i escaped all interpolation tokens in this
-| block comment, else Jade would think that it needs to
-| do some string interpolation and throw errors!
+| One thing to remember though. Jade will html escape \
+| the contents of #{}. If you want unescaped content \
+| use !{} \
+| Also notice i escaped all interpolation tokens in this \
+| block comment, else Jade would think that it needs to \
+| do some string interpolation and throw errors! \
 
-| That's all for now! In the next part I am going to
-| show you some other features like conditionals, mixins
-| and loops.
---><p>Jade</p><p>templating engine</p><p>&lt;b&gt;pum!&lt;/b&gt;</p><p>Joel: <em>Some of the girls are wearing my mother's clothing.</em></p></body></html>
+| That's all for now! In the next part I am going to \
+| show you some other features like conditionals, mixins \
+| and loops. \
+-->
+    <p>Jade</p>
+    <p>templating engine</p>
+    <p>&lt;b&gt;pum!&lt;/b&gt;</p>
+    <p>Joel: <em>Some of the girls are wearing my mother's clothing.</em></p>
+  </body></html>

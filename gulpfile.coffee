@@ -12,3 +12,6 @@ gulp.task 'repo', ->
 
 gulp.task 'gh-page', ->
   gulp.src('').pipe shell([ 'open http://crguezl.github.io/jadeexample/index.html' ])
+
+gulp.task 'beautify', ->
+  gulp.src('').pipe shell([ 'htmlbeautifier index.html' ])

@@ -4,7 +4,14 @@
 
     $ npm install jade --global
 
+Optionally install `htmlbeautifier` using:
+
+                gem install htmlbeautifier
+or
+                bundle
+
 ## Run:
+
         $ coffee jadeex.coffee > index.html
 
 or
