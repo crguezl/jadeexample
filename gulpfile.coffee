@@ -6,3 +6,9 @@ gulp.task 'default', ->
 
 gulp.task 'open', ->
   gulp.src('').pipe shell([ 'open index.html' ])
+
+gulp.task 'repo', ->
+  gulp.src('').pipe shell([ 'open https://github.com/crguezl/jadeexample' ])
+
+gulp.task 'gh-page', ->
+  gulp.src('').pipe shell([ 'open http://crguezl.github.io/jadeexample/index.html' ])
